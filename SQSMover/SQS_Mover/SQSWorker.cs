@@ -46,8 +46,8 @@ namespace SQS_Mover
 
             _logger.Info ("Started Worker : " + _id);
 
-            AWSSQSHelper sourceQueueHandler = new AWSSQSHelper (_programOptions["SourceQueue"], messagesPerDequeue, _programOptions["AWSAccessKey"], _programOptions["AWSSecretKey"]);
-            AWSSQSHelper targetQueueHandler = new AWSSQSHelper (_programOptions["TargetQueue"], messagesPerDequeue, _programOptions["AWSAccessKey"], _programOptions["AWSSecretKey"]);
+            AWSSQSHelper sourceQueueHandler = new AWSSQSHelper (_programOptions["SourceQueue"], messagesPerDequeue, _programOptions["SourceAWSAccessKey"], _programOptions["SourceAWSSecretKey"]);
+            AWSSQSHelper targetQueueHandler = new AWSSQSHelper (_programOptions["TargetQueue"], messagesPerDequeue, _programOptions["TargetAWSAccessKey"], _programOptions["TargetAWSSecretKey"]);
 
             // Local Buffer of SQS Messages
             List<Message> sqsBuffer = new List<Message> ();

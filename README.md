@@ -27,11 +27,15 @@ $ SQS_Mover.exe -Threads 5
 
 ### AWS SQS Parameters
 
-* AWSAccessKey - Mandatory - Don't have default value
+* SourceAWSAccessKey - Mandatory - Don't have default value - Key for the "Source" queue
 
-* AWSSecretKey - Mandatory - Don't have default value
+* SourceAWSSecretKey - Mandatory - Don't have default value - Secret for the "Source" queue
 
 * SourceQueue - Mandatory - Don't have default value - Name of the "Source" queue
+
+* TargetAWSAccessKey - Mandatory - Don't have default value - Key for the "Target" queue
+
+* TargetAWSSecretKey - Mandatory - Don't have default value - Secret for the "Target" queue
 
 * TargetQueue - Mandatory - Don't have default value - Name of the "Target" queue
 
